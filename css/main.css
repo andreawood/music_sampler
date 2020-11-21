@@ -1,0 +1,119 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    background: #fff;
+    color: #000;
+    margin: auto;
+}
+
+h1 {
+  font-family: "Palatino", "Georgia", serif;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 1px 1px 5px #000;
+}
+
+h2 {
+  color: #362C63;
+}
+
+.caption {
+  padding: 0rem 3rem;
+  font-style: italic;
+  color: #4F4D4F;
+  font-size: .8rem;
+}
+
+.info {
+  font-size: 1.2rem;
+  padding: 3rem 3rem;
+  line-height: 2rem;
+  color: #362C63;
+}
+
+.cover {
+    background-image: none;
+    background: #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.impalaWide {
+  width: 100%;
+  height: 500px;
+  background-image: url('../images/tame_hirez.jpg');
+  box-shadow: 1px 1px 5px #000;
+}
+
+#music {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  padding: 0rem 2rem 5rem 1rem;
+  align-items: baseline;
+}
+
+#album-covers {
+  max-width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 1.5rem;
+}
+ #player {
+   margin: 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   padding: 1rem;
+ }
+
+.album {
+  width: 300px;
+  height: 300px;
+  padding: .5rem;
+
+}
+
+footer {
+  background: #E6CEEE;
+  margin: -1rem;
+  padding: .2rem;
+  text-align: center;
+  box-shadow: -1px -1px 5px #000;
+}
+
+@media (max-width: 600px){
+
+  #music {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #album-covers {
+    max-width: 100%;
+    padding: 0rem 0rem 0rem .5rem;
+  }
+
+  #player {
+    margin: 0
+  }
+
+  footer {
+    padding: .5rem;
+  }
+}
